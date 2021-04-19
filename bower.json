@@ -1,0 +1,22 @@
+{
+  "name": "php-instagram",
+  "authors": [
+    "Aaron Smith <aaron@firstpagemarketing.com>"
+  ],
+  "description": "PHP code for loading Instagram and sending an e-mail if things don't work out",
+  "main": "index.php",
+  "license": "MIT",
+  "homepage": "http://www.firstpagemarketing.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "owl.carousel": "^2.3.4"
+  }
+}

@@ -1,0 +1,120 @@
+ul.insta-feed {
+  display: flex;
+  visibility: hidden;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+ul.insta-feed.owl-loaded {
+  visibility: visible;
+}
+
+ul.insta-feed li {
+  padding: 0px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  align-content: center;
+  overflow: hidden;
+  max-width: 300px;
+  width: 100%;
+  position: relative;
+  height: 300px;
+  margin: 0 auto;
+}
+
+ul.insta-feed li::hover .insta-desc {
+  transform: scale(1, 1);
+  opacity: 1;
+}
+
+ul.insta-feed li > a {
+  display: block;
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+ul.insta-feed li img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+ul.insta-feed li video {
+  width: 100%;
+  max-width: 100%;
+  background-color: #efefef;
+  cursor: pointer;
+}
+
+ul.insta-feed li .insta-desc {
+  width: auto;
+  position: absolute;
+  padding: 10px 10px 10px 10px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: #cf7019;
+  text-shadow: none !important;
+  left: 0px;
+  transform: scale(1.5, 1.5);
+  transition: all 250ms ease;
+  opacity: 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 400;
+}
+
+ul.insta-feed li .insta-desc a {
+  padding: 0px;
+  font-size: 14px;
+  line-height: 16px;
+  color: inherit;
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: normal;
+  font-family: 'Fira Sans', sans-serif;
+  text-decoration: none;
+}
+
+ul.insta-feed li .controls {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+}
+
+ul.insta-feed:after {
+  display: none;
+}
+
+.controls a.play_btn i {
+  opacity: 0.8;
+  color: white !important;
+  text-shadow: 1px 1px 0px black;
+  font-size: 80px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.controls a.play_btn {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.controls {
+  pointer-events: none;
+}
